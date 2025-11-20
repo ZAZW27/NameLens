@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml">
+    <padding>
+        <Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/>
+    </padding>
+
+    <Label text="Home Page" styleClass="page-title">
+        <font>
+            <Font name="System Bold" size="32.0"/>
+        </font>
+    </Label>
+
+    <Label text="Welcome to the navigation demo!" styleClass="page-content">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </Label>
+
+    <Label text="Use the sidebar to navigate between pages." styleClass="page-content">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+</VBox>
