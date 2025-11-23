@@ -7,4 +7,6 @@ module org.main.namelens {
 
     opens org.main.namelens to javafx.fxml;
     exports org.main.namelens;
+    exports org.main.namelens.backend;
+    opens org.main.namelens.backend to javafx.fxml;
 }
