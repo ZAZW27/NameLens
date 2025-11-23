@@ -5,7 +5,10 @@ public class Node {
     private Object value;
     private Node right;
     private Node left;
-    private Node parent;
+
+    // FIX: Add 'transient' here to stop the infinite loop
+    private transient Node parent;
+
     private boolean red;
 
     public Node(char key, Object value){
@@ -14,51 +17,21 @@ public class Node {
         this.red = true;
     }
 
-    public char getKey() {
-        return key;
-    }
+    public char getKey() { return key; }
+    public void setKey(char key) { this.key = key; }
 
-    public void setKey(char key) {
-        this.key = key;
-    }
+    public Object getValue() { return value; }
+    public void setValue(Object value) { this.value = value; }
 
-    public Object getValue() {
-        return value;
-    }
+    public Node getRight() { return right; }
+    public void setRight(Node right) { this.right = right; }
 
-    public void setValue(Object value) {
-        this.value = value;
-    }
+    public Node getLeft() { return left; }
+    public void setLeft(Node left) { this.left = left; }
 
-    public Node getRight() {
-        return right;
-    }
+    public Node getParent() { return parent; }
+    public void setParent(Node parent) { this.parent = parent; }
 
-    public void setRight(Node right) {
-        this.right = right;
-    }
-
-    public Node getLeft() {
-        return left;
-    }
-
-    public void setLeft(Node left) {
-        this.left = left;
-    }
-
-    public Node getParent() {
-        return parent;
-    }
-
-    public void setParent(Node parent) {
-        this.parent = parent;
-    }
-
-    public boolean isRed() {
-        return red;
-    }
-
-    public void setRed(boolean red) {
-        this.red = red;
-    }
+    public boolean isRed() { return red; }
+    public void setRed(boolean red) { this.red = red; }
 }
